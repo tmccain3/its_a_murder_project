@@ -114,9 +114,98 @@
 
         <h2>THE INVESTIGATION</h2>
 
+        <div class="investigation-grid">
+
+    <!-- Research Question -->
+    <div class="case-document research-question">
+
+        <span class="document-label">PRIMARY QUESTION</span>
+
+        <h3>
+            Can characteristics of homicide incidents in North Carolina
+            predict whether a case is solved or unsolved?
+        </h3>
+
         <p>
-            Evidence board coming next.
+            The investigation uses binary classification to examine whether
+            information known about a homicide incident contains meaningful
+            predictive information about case resolution.
         </p>
+
+    </div>
+
+
+    <!-- Target -->
+    <div class="case-document target-card">
+
+        <span class="document-label">TARGET // 01</span>
+
+        <h4>CASE STATUS</h4>
+
+        <div class="status-options">
+
+            <div>
+                <strong>SOLVED</strong>
+                <span>1</span>
+            </div>
+
+            <div>
+                <strong>UNSOLVED</strong>
+                <span>0</span>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- Evidence Used -->
+    <div class="case-document evidence-used">
+
+        <span class="document-label">ADMISSIBLE EVIDENCE</span>
+
+        <h4>12 FINAL PREDICTORS</h4>
+
+        <div class="evidence-tags">
+            <span>Victim Age</span>
+            <span>Victim Sex</span>
+            <span>Victim Race</span>
+            <span>Victim Ethnicity</span>
+            <span>Weapon</span>
+            <span>Homicide Type</span>
+            <span>Victim Count</span>
+            <span>Year</span>
+            <span>Month</span>
+            <span>MSA</span>
+            <span>Agency Type</span>
+            <span>Age Unknown</span>
+        </div>
+
+    </div>
+
+
+    <!-- Excluded -->
+    <div class="case-document excluded-evidence">
+
+        <span class="document-label">WITHHELD FROM MODEL</span>
+
+        <h4>LEAKAGE & EXCLUSIONS</h4>
+
+        <p>
+            Offender information and other fields that could reveal information
+            learned during an investigation were excluded from predictive modeling.
+        </p>
+
+        <div class="redacted-lines">
+            <span>OFFENDER DATA</span>
+            <span>RELATIONSHIP</span>
+            <span>SITUATION</span>
+            <span>CIRCUMSTANCE</span>
+        </div>
+
+    </div>
+
+</div>
 
     </section>
 
