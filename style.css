@@ -521,6 +521,112 @@ body {
 }
 
 /* =========================================
+   EXAMINING THE EVIDENCE
+========================================= */
+
+.findings-section {
+    background: var(--charcoal);
+    color: var(--paper);
+
+    padding: 100px 9%;
+}
+
+.findings-heading {
+    max-width: 750px;
+
+    margin-bottom: 55px;
+}
+
+.findings-section h2 {
+    font-family: "Oswald", sans-serif;
+
+    font-size: 4rem;
+    font-weight: 500;
+
+    margin-bottom: 20px;
+}
+
+.findings-intro {
+    color: #aaa49d;
+
+    line-height: 1.8;
+
+    max-width: 650px;
+}
+
+
+/* FINDING CARDS */
+
+.finding-grid {
+    display: grid;
+
+    grid-template-columns: repeat(3, 1fr);
+
+    gap: 25px;
+
+    max-width: 1250px;
+}
+
+.finding-card {
+    border: 1px solid #3c3c3c;
+
+    padding: 30px;
+
+    background: #1c1c1c;
+}
+
+.finding-number {
+    display: block;
+
+    color: var(--red);
+
+    font-family: "Special Elite", monospace;
+
+    font-size: 0.65rem;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 15px;
+}
+
+.finding-card h3 {
+    font-family: "Oswald", sans-serif;
+
+    font-size: 2rem;
+    font-weight: 500;
+
+    margin-bottom: 20px;
+}
+
+.finding-placeholder {
+    min-height: 230px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: var(--paper);
+
+    color: var(--gray);
+
+    font-family: "Special Elite", monospace;
+
+    font-size: 0.7rem;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 25px;
+}
+
+.finding-card p {
+    color: #aaa49d;
+
+    font-size: 0.85rem;
+
+    line-height: 1.7;
+}
+
+/* =========================================
    MOBILE
 ========================================= */
 
@@ -555,5 +661,8 @@ body {
     }
    .investigation-grid {
     grid-template-columns: 1fr;
-}
+   }
+   .finding-grid {
+    grid-template-columns: 1fr;
+   }
 }
