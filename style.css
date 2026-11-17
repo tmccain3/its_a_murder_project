@@ -345,6 +345,180 @@ body {
     margin-bottom: 25px;
 }
 
+/* =========================================
+   INVESTIGATION SUMMARY
+========================================= */
+
+.investigation-grid {
+    display: grid;
+    grid-template-columns: 1.4fr 0.8fr;
+    gap: 25px;
+
+    max-width: 1150px;
+    margin-top: 50px;
+}
+
+
+/* CASE DOCUMENT */
+
+.case-document {
+    position: relative;
+
+    background: #f1eadf;
+
+    border: 1px solid #c9beb0;
+
+    padding: 35px;
+
+    box-shadow:
+        0 8px 20px rgba(37, 37, 37, 0.08);
+}
+
+
+.document-label {
+    display: block;
+
+    color: var(--red);
+
+    font-family: "Special Elite", monospace;
+
+    font-size: 0.65rem;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 18px;
+}
+
+
+/* RESEARCH QUESTION */
+
+.research-question {
+    border-left: 5px solid var(--red);
+}
+
+.research-question h3 {
+    font-family: "Oswald", sans-serif;
+
+    font-size: 2rem;
+    font-weight: 500;
+
+    line-height: 1.25;
+
+    margin-bottom: 20px;
+}
+
+.research-question p {
+    color: #615c56;
+
+    max-width: 700px;
+
+    line-height: 1.8;
+
+    font-size: 0.9rem;
+}
+
+
+/* TARGET */
+
+.target-card h4,
+.evidence-used h4,
+.excluded-evidence h4 {
+    font-family: "Oswald", sans-serif;
+
+    font-size: 1.5rem;
+
+    margin-bottom: 20px;
+}
+
+
+.status-options {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+
+    border-top: 1px solid #bbb0a4;
+    border-bottom: 1px solid #bbb0a4;
+}
+
+.status-options div {
+    padding: 20px 10px;
+}
+
+.status-options div:first-child {
+    border-right: 1px solid #bbb0a4;
+}
+
+.status-options strong {
+    display: block;
+
+    font-family: "Oswald", sans-serif;
+
+    font-size: 1.3rem;
+}
+
+.status-options span {
+    color: var(--red);
+
+    font-family: "Special Elite", monospace;
+
+    font-size: 0.75rem;
+}
+
+
+/* EVIDENCE TAGS */
+
+.evidence-tags {
+    display: flex;
+    flex-wrap: wrap;
+
+    gap: 10px;
+}
+
+.evidence-tags span {
+    border: 1px solid #b9ad9e;
+
+    padding: 8px 12px;
+
+    font-family: "Special Elite", monospace;
+
+    font-size: 0.7rem;
+
+    background: #e4d9ca;
+}
+
+
+/* EXCLUDED EVIDENCE */
+
+.excluded-evidence p {
+    color: #615c56;
+
+    line-height: 1.7;
+
+    margin-bottom: 25px;
+
+    font-size: 0.9rem;
+}
+
+.redacted-lines {
+    display: flex;
+    flex-direction: column;
+
+    gap: 8px;
+}
+
+.redacted-lines span {
+    width: fit-content;
+
+    background: var(--ink);
+    color: var(--paper);
+
+    padding: 5px 10px;
+
+    font-family: "Special Elite", monospace;
+
+    font-size: 0.65rem;
+
+    letter-spacing: 2px;
+}
 
 /* =========================================
    MOBILE
@@ -379,4 +553,7 @@ body {
 
         margin-right: 0;
     }
+   .investigation-grid {
+    grid-template-columns: 1fr;
+}
 }
